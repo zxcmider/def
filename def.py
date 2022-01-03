@@ -54,7 +54,7 @@ def jagamine(loend:list,p:int,nint,nol:list):
     """
     :param list.loend:
     :param p int: positiivne numbridega kui
-    :param n int: negatiive numbridega kui
+    :param n int: negatiivea numbridega kui
     :param nol list: nullige kui
     """
     for el in loend:
@@ -80,7 +80,12 @@ def keskmine(loend:list)->int:
             kesk=round(sum/n,2)
     return kesk
 
-def lisamine(loend,el):
+def lisamine(loend:list,el:int)->list:
+    """
+    :param loend list: number list
+    :param el int: numbrid
+    :rtype: list: int
+    """
     loend.append(el)
     loend.sort()
 
